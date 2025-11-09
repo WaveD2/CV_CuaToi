@@ -12,7 +12,19 @@
     Kinh nghiệm (sử dụng bảng hoặc danh sách)
     Kỹ năng
     Sở thích
- -->
+
+    nhận xét:
+        1.  Học vấn & Kỹ năng & Sở thích (Sử dụng Danh sách)
+    Trong yêu cầu có đề cập sử dụng danh sách cho phần Học vấn, và danh sách cũng là cấu trúc tốt nhất cho Kỹ năng và Sở thích. Hiện tại, bạn đang sử dụng nhiều thẻ <p> liên tiếp
+    Nên thay thế các thẻ <p> trong mục Học vấn, Kỹ năng, và Sở thích bằng danh sách không thứ tự (<ul> và <li>) để thể hiện các mục riêng biệt một cách rõ ràng và ngữ nghĩa hơn.
+     ví dụ:
+         <h2>Education</h2> <ul> <li>Cao đẳng FPT Polytechnic</li> <li>Ngành: Công nghệ thông tin</li> <li>Loại: Giỏi</li> </ul>
+
+    2.Phần Thông tin Cá nhân/Giới thiệu
+    mô tả bản thân khá dài đặt trong nhiều thẻ <p> lồng trong một thẻ <p> và thẻ <div>.
+    Sửa lỗi cú pháp: Cần loại bỏ thẻ <p> dư thừa bao quanh toàn bộ đoạn mô tả ở cuối <div class="title"> (hiện tại là </p></p>).
+    Tối ưu hóa: Phần giới thiệu bản thân nên nằm trong một thẻ section hoặc tiếp tục sử dụng các thẻ <p> 
+    -->
     <!-- phần đầu trang -->
     <header>
         <img src="img/thao7.jpg" style="width: 150px;" alt="">
