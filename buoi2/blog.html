@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Tạo trang Blog cá nhân với cấu trúc:
+Header: Logo + Menu
+Section "Về tôi"
+Section "Bài viết" chứa 3-4 article
+Sidebar với "Danh mục" và "Bài viết phổ biến"
+Footer với thông tin bản quyền
+ -->
+        <header>
+            <div class="header-contact">
+                <a href="" class="logo">Blog cá nhân</a>
+                <nav>
+                    <a href="">về tôi </a>
+                    <a href="">bài viết </a>
+                    <a href="">liên hệ</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- nội dung chính -->
+            <section aria-label="Danh sách bài viết">
+                <article>
+                    <h2>về tôi</h2>
+                    <hr>
+                    <img src="/bvn/buoi1/img/thao7.jpg" style="width: 150px;" alt="">
+                    <p>Xin chào, tôi là lê công minh thảo, một người đam mê phát triển phần mềm và công nghệ. Tôi thường xuyên chia sẻ những kiến thức, dự án cá nhân và trải nghiệm của mình tại đây. Hy vọng bạn tìm thấy điều hữu ích!</p>
+                </article>
+                <!-- bài viết mới nhất -->
+                <h2>bài viết mới nhất </h2>
+                <hr>
+                <article>
+                 <h3>lộ trình học javascrpit hôm nay</h3>
+                 <p>đăng ngày: 09/11/2025 | Danh mục: lập trình</p>
+                 <p>khám phá các tính năng mới nhất của javasrpit và cách áp dụng chúng vào thức tế</p>   
+                </article>
+
+                <article>
+                 <h3>Quản lý thời gian hiệu quả</h3>
+                 <p>đăng ngày: 09/11/2025 | Danh mục: lập trình</p>
+                 <p>Một hướng dẫn chi tiết về cách sử dụng kỹ thuật Pomodoro để cải thiện sự tập trung và tối đa hóa năng suất làm việc.</p>   
+                </article>
+
+                <article>
+                 <h3>đánh giá famework mạnh nhất trong 10 năm qua</h3>
+                 <p>đăng ngày: 09/11/2025 | Danh mục: lập trình</p>
+                 <p>Một hướng dẫn chi tiết về cách sử dụng kỹ thuật Pomodoro để cải thiện sự tập trung và tối đa hóa năng suất làm việc.</p>   
+                </article>
+
+                <aside class="Sidebar">
+                    <div class="sidebar-danhmuc">
+                        <h2>Danh Mục</h2>
+                        <hr>
+                        <ul>
+                            <li><a href="">lập trình</a></li>
+                            <li><a href="">kỹ năng mềm</a></li>
+                            <li><a href="">công nghệ mới</a></li>
+                            <li><a href="">cơ sở dữ liệu </a></li>
+                            <li><a href="">sách và review</a></li>
+                        </ul>
+                    </div>
+                    <!--  -->
+                    <div class="sidebar-danhmuc">
+                        <h2>Bài viết phổ biến</h2>
+                        <hr>
+                        <ul>
+                            <li><a href="">làm chủ flex box trong vòng 10 phút</a></li>
+                            <li><a href="">10 cuốn sách kĩ năng mềm</a></li>
+                            <li><a href="">sự khác biệt của class với id là gì ? </a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </section>
+            <footer>2025 blog cá nhân. Bản quyền từ nhà phát hành lê công minh thảo</footer>
+        </main>
+</body>
+</html>
