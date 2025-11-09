@@ -12,7 +12,40 @@ Section "Về tôi"
 Section "Bài viết" chứa 3-4 article
 Sidebar với "Danh mục" và "Bài viết phổ biến"
 Footer với thông tin bản quyền
- -->
+
+    NHÂN XÉT CỦA ANH TÙNG
+    1.Tách <section> và <aside>: aside nên là một khối độc lập với section nội dung chính, hoặc nằm cạnh các section đó trong thẻ main. Bạn nên để aside (Sidebar) nằm cùng cấp với <section> chứa các bài viết, hoặc tách riêng từng phần ra.
+    Ngữ nghĩa của <article>: Thẻ <article> được dùng để bao bọc một nội dung độc lập hoàn chỉnh (như một bài blog, một bài báo).
+    Phần "Về tôi" là một nội dung độc lập, nên việc sử dụng <article> là hợp lý.
+    Phần "Danh sách bài viết" nên được bao bọc bởi một thẻ <section>, và mỗi bài viết riêng lẻ bên trong đó mới là một thẻ <article>.
+     <main>
+    <section id="ve-toi">
+        <h2 class="text-3xl font-extrabold">Về tôi</h2>
+        <p>...</p> 
+    </section>
+
+    <div class="content-wrapper"> 
+        
+        <section id="bai-viet">
+            <h2>Bài viết mới nhất</h2>
+            <article>...</article>
+            <article>...</article>
+            <article>...</article>
+        </section>
+
+        <aside class="Sidebar">
+            </aside>
+    </div>
+</main>
+    2.Nên chỉnh sửa: Trong thẻ <nav>,  nên sử dụng danh sách không thứ tự (<ul> và <li>) để bao bọc các liên kết (<a>)
+    <nav>
+        <ul>
+            <li><a href="">Về tôi</a></li>
+            <li><a href="">Bài viết</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+    </nav>
+    -->
         <header>
             <div class="header-contact">
                 <a href="" class="logo">Blog cá nhân</a>
